@@ -27,7 +27,6 @@ public class Calculator {
         double num2 = scanner.nextDouble();
         
         double result = 0;
-        boolean validOperation = true;
         
         switch (choice) {
             case 1:
@@ -48,12 +47,10 @@ public class Calculator {
                     System.out.println("結果: " + num1 + " / " + num2 + " = " + result);
                 } else {
                     System.out.println("エラー: 0で割ることはできません");
-                    validOperation = false;
                 }
                 break;
             default:
                 System.out.println("無効な選択です");
-                validOperation = false;
         }
         
         scanner.close();
